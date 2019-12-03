@@ -23,8 +23,8 @@
          name="head_cmd_mux" output="screen"/>
 
     <!-- Platform Teleoperation -->
-    <node pkg="si_utils" type="timed_roslaunch"
+    <!-- <node pkg="si_utils" type="timed_roslaunch"
         args="14 movo_bringup movo_teleop.launch local:=false"
-        name="teleop_bringup" output="screen"/>
+        name="teleop_bringup" output="screen"/> -->
            
 </launch>

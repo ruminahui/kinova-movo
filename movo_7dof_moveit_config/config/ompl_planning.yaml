@@ -159,4 +159,4 @@ upper_body:
     - PRMkConfigDefault
     - PRMstarkConfigDefault
   projection_evaluator: joints(right_shoulder_pan_joint,left_shoulder_pan_joint)
-  longest_valid_segment_fraction: 0.05
+  longest_valid_segment_fraction: 0.001
