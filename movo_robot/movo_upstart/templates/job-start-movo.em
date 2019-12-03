@@ -72,6 +72,9 @@ export ROS_MASTER_URI=http://127.0.0.1:11311
 log info "@(name): Launching ROS_HOSTNAME=$ROS_HOSTNAME, ROS_IP=$ROS_IP, ROS_MASTER_URI=$ROS_MASTER_URI, ROS_LOG_DIR=$log_path"
 
 # Assemble amalgamated launchfile.
+echo Delaying 3 seconds for initial startup
+sleep 3
+
 LAUNCH_FILENAME=$log_path/@(name).launch
 rosrun movo_upstart mklaunch $JOB_FOLDER > $LAUNCH_FILENAME
 if [[ "$?" != "0" ]]; then
